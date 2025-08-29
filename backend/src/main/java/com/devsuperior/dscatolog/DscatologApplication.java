@@ -1,13 +1,13 @@
-package com.devsuperior.dscatolg;
+package com.devsuperior.dscatolog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DscatolgApplication {
+public class DscatologApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DscatolgApplication.class, args);
+		SpringApplication.run(DscatologApplication.class, args);
 	}
 
 }

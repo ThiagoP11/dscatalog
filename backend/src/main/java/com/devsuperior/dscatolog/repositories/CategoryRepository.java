@@ -1,6 +1,6 @@
-package com.devsuperior.dscatolg.repositories;
+package com.devsuperior.dscatolog.repositories;
 
-import com.devsuperior.dscatolg.entities.Category;
+import com.devsuperior.dscatolog.entities.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

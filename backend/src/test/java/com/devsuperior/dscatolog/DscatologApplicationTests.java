@@ -1,10 +1,10 @@
-package com.devsuperior.dscatolg;
+package com.devsuperior.dscatolog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DscatolgApplicationTests {
+class DscatologApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,7 +1,7 @@
-package com.devsuperior.dscatolg.resources;
+package com.devsuperior.dscatolog.resources;
 
-import com.devsuperior.dscatolg.entities.Category;
-import com.devsuperior.dscatolg.services.CategoryService;
+import com.devsuperior.dscatolog.entities.Category;
+import com.devsuperior.dscatolog.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

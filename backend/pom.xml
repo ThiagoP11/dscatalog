@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsuperior</groupId>
-	<artifactId>dscatolg</artifactId>
+	<artifactId>dscatolog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dscatolg</name>
+	<name>dscatolog</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
