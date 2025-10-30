@@ -23,7 +23,7 @@ public class UserInsertValidator implements ConstraintValidator<UserInsertValid,
     public void initialize(UserInsertValid ann) {
     }
 
-    @Override//testa se o meu UserInsertDTO vai ser válido ou não
+    @Override//testa se o meu objeto UserInsertDTO vai ser válido ou não
     public boolean isValid(UserInsertDTO dto, ConstraintValidatorContext context) {
 
         List<FieldMessage> list = new ArrayList<>();
@@ -37,6 +37,7 @@ public class UserInsertValidator implements ConstraintValidator<UserInsertValid,
         }
 
         for (FieldMessage e : list) {
+            //inserindo os erros na lista de erro do beans validation
             context.disableDefaultConstraintViolation();
             context.buildConstraintViolationWithTemplate(e.getMessage()).addPropertyNode(e.getFieldName())
                     .addConstraintViolation();
