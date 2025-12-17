@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service//registra a classe como um componente que vai participar um sistema de injeção de dependencia do spring
@@ -24,9 +25,9 @@ public class CategoryService {
     private CategoryRepository repository;
 
     @Transactional(readOnly = true)
-    public Page<CategoryDTO> findAllPaged(Pageable pageable) {
-        Page<Category> list = repository.findAll(pageable);
-        return list.map(CategoryDTO::new);
+    public List<CategoryDTO> findAll() {
+        List<Category> list = repository.findAll();
+        return list.stream().map(CategoryDTO::new).toList();
     }
 
     @Transactional(readOnly = true)
