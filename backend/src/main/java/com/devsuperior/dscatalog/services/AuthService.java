@@ -60,14 +60,12 @@ public class AuthService {
         entity.setToken(token);
         entity.setExpiration(Instant.now().plusSeconds(tokenMinutes * 60L));
 
-        entity = passwordRecoverRepository.save(entity);
+        passwordRecoverRepository.save(entity);
 
         String text = "Acesse o link para definir uma nova senha\n\n"
                 + recoverUri + token + ". Validade de " + tokenMinutes + " minutos.";
 
         emailService.sendEmail(body.getEmail(), "Recuperação de senha", text);
-
-
 
     }
 

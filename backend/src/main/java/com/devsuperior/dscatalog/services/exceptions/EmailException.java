@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.resources.exceptions;
+package com.devsuperior.dscatalog.services.exceptions;
 
 
 public class EmailException extends RuntimeException {

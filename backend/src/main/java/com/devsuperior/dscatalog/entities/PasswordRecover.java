@@ -13,6 +13,7 @@ public class PasswordRecover {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //serve para dizer que a coluna no banco de dados NÃO pode receber valor NULL
     @Column(nullable = false)
     private String token;
 
